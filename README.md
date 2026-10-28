@@ -1,9 +1,9 @@
 # neel ✦ Y2K Online Shopping Website
 
-FLEXI CA - 03
-Name- khushi Agrawal
-PRN - 25070521208
-IIIrd Sem sec - D1
+FLEXI CA - 03 | 
+Name- khushi Agrawal | 
+PRN - 25070521208 | 
+IIIrd Sem sec - D1 
 
 **neel** is a full-stack online shopping web application built for the **FLEXI project**. Customers can browse products, add them to a cart and place an order. All products and orders are stored in and read from **MongoDB**. The UI follows a **Y2K (late 90s / early 2000s)** aesthetic.
 
