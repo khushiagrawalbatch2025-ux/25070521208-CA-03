@@ -1,0 +1,25 @@
+{% extends "shop/base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <h1>Dyed in indigo. Cut to last.</h1>
+    <p>Everyday shirts, tees, trousers and layers, dipped in natural indigo and made to get better with every wash.</p>
+    <a class="btn" href="{% url 'shop' %}">Shop all clothing</a>
+  </div>
+  <div class="weave" aria-hidden="true"><span>Indigo, 12 dips</span></div>
+</section>
+
+<section class="wrap">
+  <div class="head"><h2>Bestsellers</h2><a href="{% url 'shop' %}">View all</a></div>
+  <div class="grid">{% for p in featured %}{% include "shop/_card.html" %}{% empty %}<p class="empty">No products yet. Run <code>python manage.py seed</code> to add samples.</p>{% endfor %}</div>
+</section>
+
+<section class="cats">
+  {% for c in categories %}<a href="{% url 'shop' %}?cat={{ c.slug }}">{{ c.name }}</a>{% endfor %}
+</section>
+
+<section class="wrap story">
+  <h2>Made slowly, in small batches</h2>
+  <p>Each piece is dipped by hand and rinsed until the water runs clear. No two are identical, and the colour deepens as you wear it. We cut generous, stitch twice where it counts and use fabric that lasts for years.</p>
+</section>
+{% endblock %}
